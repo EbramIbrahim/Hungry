@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hungry/splash.dart';
 
+import 'features/auth/ui/login_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Hungry',
-      home: const SplashScreen(),
+      home: const LoginScreen(),
     );
   }
 }
