@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hungry/splash.dart';
 
 import 'features/auth/ui/login_screen.dart';
 
