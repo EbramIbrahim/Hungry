@@ -24,7 +24,7 @@ class PrimaryTextFieldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width ?? 331,
+      width: width ?? 391,
       child: TextFormField(
         controller: controller,
         validator: validator,
