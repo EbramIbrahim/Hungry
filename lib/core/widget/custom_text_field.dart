@@ -7,6 +7,7 @@ class PrimaryTextFieldWidget extends StatelessWidget {
   final Widget? suffixIcon;
   final Widget? preffixIcon;
   final bool? isPassword;
+  final Color? fillColor;
   final TextEditingController? controller;
   final String? Function(String?)? validator;
 
@@ -18,7 +19,7 @@ class PrimaryTextFieldWidget extends StatelessWidget {
     this.preffixIcon,
     this.isPassword,
     this.controller,
-    this.validator,
+    this.validator, this.fillColor,
   });
 
   @override
@@ -26,6 +27,7 @@ class PrimaryTextFieldWidget extends StatelessWidget {
     return SizedBox(
       width: width ?? 391,
       child: TextFormField(
+        style: TextStyle(color: AppColors.whiteColor),
         controller: controller,
         validator: validator,
         autofocus: false,
@@ -55,7 +57,7 @@ class PrimaryTextFieldWidget extends StatelessWidget {
             borderSide: BorderSide(color: Colors.red, width: 1),
           ),
           filled: true,
-          fillColor: AppColors.primaryColor,
+          fillColor: fillColor ?? AppColors.primaryColor,
           suffixIcon: suffixIcon,
           prefixIcon: preffixIcon,
         ),
