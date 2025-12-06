@@ -13,6 +13,7 @@ class SignupScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController nameController = TextEditingController();
     TextEditingController emailController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
     TextEditingController confirmPasswordController = TextEditingController();
@@ -34,6 +35,18 @@ class SignupScreen extends StatelessWidget {
                 fontWeight: FontWeight.w400,
               ),
               verticalSpacing(40),
+              PrimaryTextFieldWidget(
+                hintText: 'Name',
+                controller: nameController,
+                validator: (value) {
+                  if(value == null || value.isEmpty) {
+                    return 'Please enter your Name';
+                  } else {
+                    return null;
+                  }
+                },
+              ),
+              verticalSpacing(20),
               PrimaryTextFieldWidget(
                 hintText: 'Email',
                 controller: emailController,
@@ -77,7 +90,6 @@ class SignupScreen extends StatelessWidget {
                 text: 'SignUp',
                 onPressed: () {
                   if(formKey.currentState!.validate()) {
-                    print("Successful register");
                   }
                 },
                 width: 391,
