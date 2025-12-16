@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hungry/core/constant/app_string.dart';
+import 'package:hungry/core/constant/app_assets.dart';
 import 'package:hungry/core/helpers/spacing.dart';
 import 'package:hungry/core/widget/custom_text.dart';
 

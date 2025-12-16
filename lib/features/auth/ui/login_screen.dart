@@ -6,7 +6,7 @@ import 'package:hungry/core/widget/app_rounded_button.dart';
 import 'package:hungry/core/widget/custom_text.dart';
 import 'package:hungry/core/widget/custom_text_field.dart';
 
-import '../../../core/constant/app_string.dart';
+import '../../../core/constant/app_assets.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

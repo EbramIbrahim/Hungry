@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hungry/core/constant/app_colors.dart';
 import 'package:hungry/features/auth/ui/profile_screen.dart';
-import 'package:hungry/features/card/presentation/card_screen.dart';
+import 'package:hungry/features/card/presentation/cart_screen.dart';
 import 'package:hungry/features/home/presentation/screens/home_screen.dart';
 import 'package:hungry/features/order/presentation/order_history_screen.dart';
 
@@ -18,7 +18,7 @@ class _RootScreenState extends State<RootScreen> {
   int currentIndex = 0;
   List<Widget> pageScreens = [
     const HomeScreen(),
-    const CardScreen(),
+    const CartScreen(),
     const OrderHistoryScreen(),
     const ProfileScreen(),
   ];

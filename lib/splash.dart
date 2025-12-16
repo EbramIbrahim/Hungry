@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hungry/core/constant/app_colors.dart';
-import 'package:hungry/core/constant/app_string.dart';
+import 'package:hungry/core/constant/app_assets.dart';
 import 'package:hungry/core/helpers/spacing.dart';
 
 class SplashScreen extends StatelessWidget {
