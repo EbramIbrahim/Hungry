@@ -5,4 +5,5 @@
   static const String sonicImg = "${assetPath}sonic.png";
   static const String burgerImg = "${assetPath}burger.png";
   static const String productDetailsImg = "${assetPath}product_details_img.png";
+  static const String tomatoImg = "${assetPath}tomato.png";
  }
