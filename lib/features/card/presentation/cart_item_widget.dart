@@ -45,7 +45,7 @@ class FoodDetails extends StatelessWidget {
           decoration: BoxDecoration(
             boxShadow: [
               BoxShadow(
-                color: Colors.grey.withOpacity(0.3),
+                color: Colors.grey.withValues(alpha: 0.3),
                 blurRadius: 20,
                 offset: Offset(0, 20),
               ),
