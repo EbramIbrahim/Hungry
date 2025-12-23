@@ -8,6 +8,8 @@ class PrimaryTextFieldWidget extends StatelessWidget {
   final Widget? preffixIcon;
   final bool? isPassword;
   final Color? fillColor;
+  final Color? borderColor;
+  final Color? hintColor;
   final TextEditingController? controller;
   final String? Function(String?)? validator;
 
@@ -19,7 +21,10 @@ class PrimaryTextFieldWidget extends StatelessWidget {
     this.preffixIcon,
     this.isPassword,
     this.controller,
-    this.validator, this.fillColor,
+    this.validator,
+    this.fillColor,
+    this.borderColor,
+    this.hintColor,
   });
 
   @override
@@ -35,18 +40,18 @@ class PrimaryTextFieldWidget extends StatelessWidget {
         obscureText: isPassword ?? false,
         decoration: InputDecoration(
           hintText: hintText ?? "",
-          hintStyle: TextStyle(color: AppColors.whiteColor),
+          hintStyle: TextStyle(color: hintColor ?? AppColors.whiteColor),
           contentPadding: EdgeInsets.symmetric(
             horizontal: 18,
             vertical: 18,
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
-            borderSide: BorderSide(color: AppColors.whiteColor, width: 1),
+            borderSide: BorderSide(color: borderColor ?? AppColors.whiteColor, width: 1),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
-            borderSide: BorderSide(color: AppColors.whiteColor, width: 1),
+            borderSide: BorderSide(color: borderColor ?? AppColors.whiteColor, width: 1),
           ),
           errorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
